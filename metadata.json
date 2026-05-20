@@ -1,0 +1,6 @@
+{
+  "name": "Bornia Rattan",
+  "description": "Sito vetrina ufficiale di Bornia Rattan - L'Arte del Rattan dal 1970",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

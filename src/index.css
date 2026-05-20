@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+@theme {
+  --font-sans: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "EB Garamond", ui-serif, Georgia, serif;
+  
+  --color-brand-primary: #6f583c;
+  --color-brand-primary-container: #897052;
+  --color-brand-secondary: #6b5d3e;
+  --color-brand-tertiary: #4f6144;
+  --color-brand-soft-sand: #EBE3D5;
+  --color-brand-deep-earth: #403221;
+  --color-brand-sage-accent: #718566;
+  --color-brand-surface: #fbf9f4;
+  --color-brand-surface-container: #f0eee9;
+  --color-brand-surface-container-low: #f5f3ee;
+}
+
+/* Custom scroll behavior and fade-in animations */
+html {
+  scroll-behavior: smooth;
+  background-color: #fbf9f4;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: #1b1c19;
+  -webkit-font-smoothing: antialiased;
+}
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
