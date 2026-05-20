@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Sparkles, CheckCircle2, ShoppingBag } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 import { ActiveTab, Product } from './types';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -183,6 +184,9 @@ export default function App() {
           </div>
         </div>
       )}
+      
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   );
 }
