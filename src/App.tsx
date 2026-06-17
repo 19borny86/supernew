@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Sparkles, CheckCircle2, ShoppingBag } from 'lucide-react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { ActiveTab, Product } from './types';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -92,6 +93,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen flex flex-col justify-between bg-brand-surface text-brand-deep-earth selection:bg-brand-primary-container/20">
+      <SpeedInsights />
       
       {/* Top Navbar */}
       <Header
